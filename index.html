@@ -6,13 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pasirasyti paskaitos data</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <script type="module" src="./js/main.js" defer></script>
+    <script src="./js/helper.js" defer></script>
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
+    <header class="header">
+      <div class="container flex justify-between align-center">
+        <a href="" class="logo"> Our<strong>Posts</strong> </a>
+        <nav class="main-nav">
+          <a href="/" class="main-nav__link">Posts</a>
+          <a href="/add-post.html" class="main-nav__link">Add post</a>
+        </nav>
+      </div>
+    </header>
     <div class="container">
-      <h1>https://dummyjson.com/docs/posts</h1>
-      <button id="btn">Sort</button>
-      <div id="app"></div>
+      <h1 class="main-title">Our posts project</h1>
+      <div class="posts-container">
+        <!--  Aprasyta, kaip atrodys sugeneruotas post elementas -->
+        <div class="post">
+          <ul class="post-tags">
+            <li>red</li>
+            <li>green</li>
+          </ul>
+          <p class="post__reactions"><span>2</span> reactions</p>
+          <h3>title</h3>
+          <p class="post__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+            doloribus!
+          </p>
+          <a class="post__link" href="/">Read more > </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
